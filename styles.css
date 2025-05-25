@@ -1,0 +1,116 @@
+/* CUERPO PRINCIPAL */
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: rgb(164, 192, 207);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* CONTENEDOR INICIAL */
+
+.contenedor {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 1%);
+    text-align: center;
+    width: 380px;
+}
+
+/* TITULO */
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+/* ENTRADA DE DATOS */
+
+input {
+    padding: 0.7rem;
+    width: 80%;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+/* BOTÓN PARA GENERAR EL QR */
+
+button {
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    background-color: #0078d4;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #005fa3;
+}
+
+/* CONTENEDOR DEL CÓDIGO QR */
+
+#contenedor-qr {
+    display: none;
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+/* IMAGEN DEL CÓDIGO QR GENERADO */
+
+#codigoQR {
+    max-width: 100%;
+    margin-top: 1rem;
+}
+
+/* NOTIFICACIÓN */
+
+.notificacion {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+}
+
+.notificacion-contenido {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px, 10px rgba(0, 0, 0, 0.2);
+}
+
+/* ADAPTACIÓN AL CELULAR */
+
+@media (width <= 720px) {
+
+    body {
+        margin: 80px;
+    }
+
+    .contenedor {
+        width: 240px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    input {
+        width: 200px;
+    }
+}
